@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import {getEpicContract} from '../utils/getter';
 import {useWalletAndNetwork} from './useWalletAndNetwork';
 

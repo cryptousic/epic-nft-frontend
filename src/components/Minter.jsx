@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {useWalletAndNetwork} from "../hooks/useWalletAndNetwork";
 import {CircularProgress} from "@mui/material";
 import {useMintNFTs} from "../hooks/useMintNFTs";

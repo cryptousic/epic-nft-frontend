@@ -5,7 +5,7 @@ import {CONTRACT_ADDRESS} from "../utils/config";
 const RARIBLE_LINK = 'https://rinkeby.rarible.com/collection/';
 
 
-export function useWalletAndNetwork() {
+export function useWalletAndNetwork(run) {
     const [currentAccount, setCurrentAccount] = useState('');
 
     const checkIfWalletIsConnected = async () => {
@@ -27,7 +27,7 @@ export function useWalletAndNetwork() {
 
             // Setup listener! This is for the case where a user comes to our site
             // and ALREADY had their wallet connected + authorized.
-            setupEventListener()
+            //setupEventListener()
 
         } else {
             console.log("No authorized account found")
