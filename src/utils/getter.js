@@ -1,11 +1,11 @@
 import abi from '../utils/MyEpicNFT.json';
 import { ethers } from 'ethers';
-import { contractAddress } from './config';
+import { CONTRACT_ADDRESS } from './config';
 
-export function getWavePortalContract(ethereum) {
+export function getEpicContract(ethereum) {
     const contractABI = abi.abi;
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
 
-    return new ethers.Contract(contractAddress, contractABI, signer);
+    return new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 }
