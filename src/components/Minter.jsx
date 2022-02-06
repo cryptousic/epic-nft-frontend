@@ -5,7 +5,7 @@ import {useMintNFTs} from "../hooks/useMintNFTs";
 
 const Minter = () => {
 
-    const TOTAL_MINT_COUNT = 50;
+    const TOTAL_MINT_COUNT = 5;
 
     const {currentAccount, connectWallet} = useWalletAndNetwork();
     const {askContractToMintNft, askContractForNumberOfMintedNFTs, mining, totalMinted} = useMintNFTs();
